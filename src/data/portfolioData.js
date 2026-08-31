@@ -92,47 +92,25 @@ export const skillsData = {
 export const projectsData = [
   {
     id: "rock-paper-scissors",
-    title: "Rock-Paper-Scissors Game",
+    title: "Rock-Paper-Scissors Game (User vs Computer)",
     category: "Python Game / Logic",
     technology: ["Python"],
-    description: "A Rock-Paper-Scissors game where the user plays against the computer. Implements game loops, random selection algorithms, and score tracking logic in Python.",
-    highlights: ["Interactive user input handling", "Randomized computer logic", "Score counter and replay mechanism"],
+    description: "An interactive Rock-Paper-Scissors game where the user plays against the computer in real time. Implements game loops, random selection algorithms, input validation, and score tracking logic in Python.",
+    highlights: ["Interactive player vs computer game loop", "Randomized computer logic & decision evaluation", "Live score counter and replay mechanism"],
     githubUrl: "https://github.com/your-username/rock-paper-scissors", // <-- Placeholder
     liveDemoUrl: "", // <-- Placeholder (Console based)
     isConsole: true
   },
   {
-    id: "basic-calculator",
-    title: "Basic Calculator",
-    category: "GUI Application",
-    technology: ["Python", "Tkinter"],
-    description: "A basic calculator application with a graphical user interface (GUI) built using Python and Tkinter. Supports arithmetic computations with responsive button interactions.",
-    highlights: ["Tkinter GUI layout & grid design", "Arithmetic expression evaluation", "Error handling for invalid calculations"],
-    githubUrl: "https://github.com/your-username/basic-calculator", // <-- Placeholder
+    id: "ai-assistant-siri",
+    title: "AI Assistant Siri",
+    category: "AI / Automation",
+    technology: ["Python", "SpeechRecognition", "Pyttsx3"],
+    description: "An intelligent desktop AI voice assistant developed using Python. Recognizes voice commands, performs web searches, automates everyday desktop workflows, and delivers speech feedback.",
+    highlights: ["Voice command recognition & speech synthesis", "Automated task execution & web searches", "Modular intent parsing and query handler"],
+    githubUrl: "https://github.com/your-username/ai-assistant-siri", // <-- Placeholder
     liveDemoUrl: "", // <-- Placeholder
     isConsole: false
-  },
-  {
-    id: "student-management-system",
-    title: "Student Management System",
-    category: "Console Application",
-    technology: ["Python"],
-    description: "A console-based Student Management System developed in Python. Allows adding, viewing, updating, and managing student records in an organized and structured format.",
-    highlights: ["CRUD operations for student records", "Data validation & formatted display", "Modular file/in-memory data handling"],
-    githubUrl: "https://github.com/your-username/student-management-system", // <-- Placeholder
-    liveDemoUrl: "", // <-- Placeholder
-    isConsole: true
-  },
-  {
-    id: "todo-list-app",
-    title: "To-Do List App",
-    category: "Productivity Tool",
-    technology: ["Python"],
-    description: "A practical To-Do List application designed to organize daily tasks, mark completions, and manage personal productivity effectively.",
-    highlights: ["Task creation and status tracking", "Persistent list management", "Clean user menu flow"],
-    githubUrl: "https://github.com/your-username/todo-list-app", // <-- Placeholder
-    liveDemoUrl: "", // <-- Placeholder
-    isConsole: true
   }
 ];
 
@@ -174,7 +152,7 @@ export const achievementsData = [
     title: "Cleared Jawahar Navodaya Vidyalaya Entrance Exam (JNVST)",
     category: "Competitive Examination",
     badge: "National Level Selection",
-    icon: "Award",
+    icon: "Sparkles",
     description: "Successfully cleared the prestigious and highly competitive Jawahar Navodaya Vidyalaya Selection Test (JNVST), recognized for identifying academic talent and problem-solving aptitude."
   },
   {
