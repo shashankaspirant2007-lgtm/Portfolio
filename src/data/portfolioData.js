@@ -168,12 +168,29 @@ export const educationData = [
   }
 ];
 
-export const certificationData = [
+export const achievementsData = [
   {
-    id: "skillup-cert",
-    title: "Digital Leadership in Business",
-    issuer: "Skillup",
-    badge: "Verified Certification",
-    description: "Foundational certification covering digital transformation, modern leadership strategies in technology-driven business environments, and modern teamwork dynamics."
+    id: "jnv-exam",
+    title: "Cleared Jawahar Navodaya Vidyalaya Entrance Exam (JNVST)",
+    category: "Competitive Examination",
+    badge: "National Level Selection",
+    icon: "Award",
+    description: "Successfully cleared the prestigious and highly competitive Jawahar Navodaya Vidyalaya Selection Test (JNVST), recognized for identifying academic talent and problem-solving aptitude."
+  },
+  {
+    id: "mastered-c",
+    title: "Mastered C Programming Language",
+    category: "Language Mastery",
+    badge: "Core Engineering",
+    icon: "Code2",
+    description: "Achieved comprehensive mastery of C programming, including low-level memory management, pointers, dynamic memory allocation, and structured modular coding."
+  },
+  {
+    id: "mastered-python",
+    title: "Mastered Python Programming Language",
+    category: "Language Mastery",
+    badge: "Application Development",
+    icon: "Terminal",
+    description: "Mastered Python programming for building real-world console applications, Tkinter graphical user interfaces (GUIs), automation scripts, and data handling workflows."
   }
 ];
