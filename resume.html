@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashank Shukla - Resume</title>
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #0f172a;
+      color: #1e293b;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+    .resume-sheet {
+      background-color: #ffffff;
+      width: 100%;
+      max-width: 850px;
+      margin: 24px auto;
+      padding: 36px 44px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+      border-radius: 4px;
+    }
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #0f172a;
+      border-bottom: 1.5px solid #0f172a;
+      padding-bottom: 2px;
+      margin-top: 12px;
+      margin-bottom: 6px;
+    }
+    .resume-text {
+      font-size: 9.5pt;
+      line-height: 1.38;
+      color: #1e293b;
+    }
+    .bullet-list {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+    .bullet-item {
+      position: relative;
+      padding-left: 14px;
+      margin-bottom: 3px;
+      font-size: 9.5pt;
+      line-height: 1.35;
+    }
+    .bullet-item::before {
+      content: "•";
+      position: absolute;
+      left: 2px;
+      color: #0f172a;
+      font-weight: bold;
+    }
+    .bullet-item-circle::before {
+      content: "●";
+      font-size: 7pt;
+      top: -0.5px;
+    }
+    a {
+      color: #0284c7;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #0369a1;
+    }
+    @media print {
+      @page {
+        size: A4 portrait;
+        margin: 10mm 14mm;
+      }
+      body {
+        background-color: #ffffff !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .resume-sheet {
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        max-width: 100% !important;
+        width: 100% !important;
+      }
+      .section-title {
+        border-bottom: 1.5px solid #000000 !important;
+        margin-top: 10px !important;
+        margin-bottom: 4px !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen py-6 px-4">
+
+  <!-- Top Action Navigation Bar (Hidden when Printing) -->
+  <div class="max-w-[850px] mx-auto mb-4 flex flex-wrap items-center justify-between gap-3 no-print bg-slate-900 border border-slate-800 p-3 rounded-xl shadow-lg">
+    <div class="flex items-center gap-3">
+      <a href="index.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-all border border-slate-700 text-decoration-none">
+        <i data-lucide="arrow-left" class="w-4 h-4 text-cyan-400"></i>
+        <span>Portfolio Home</span>
+      </a>
+      <a href="comic.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-all border border-slate-700 text-decoration-none">
+        <i data-lucide="book-open" class="w-4 h-4 text-purple-400"></i>
+        <span>Comic Storyboard</span>
+      </a>
+    </div>
+
+    <div class="flex items-center gap-2">
+      <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-xs font-bold text-white shadow-md shadow-cyan-500/20 transition-all cursor-pointer">
+        <i data-lucide="printer" class="w-4 h-4"></i>
+        <span>Print / Save as PDF (1 Page)</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Main Single-Page ATS Resume Sheet -->
+  <main class="resume-sheet">
+    
+    <!-- 1. Header Section -->
+    <header class="mb-2">
+      <h1 class="text-2xl sm:text-[26pt] font-extrabold text-slate-950 tracking-tight leading-none mb-1.5">
+        Shashank Shukla
+      </h1>
+      
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-1 text-[9.5pt] text-slate-800">
+        <div>
+          <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/shashank-shukla</a></span>
+        </div>
+        <div class="sm:text-right">
+          <span><strong>Email:</strong> <a href="mailto:shashankaspirant2007@gmail.com" class="text-slate-800 no-underline hover:underline">shashankaspirant2007@gmail.com</a></span>
+        </div>
+        <div>
+          <span><strong>GitHub:</strong> <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer">github.com/shashankaspirant2007-lgtm</a></span>
+        </div>
+        <div class="sm:text-right">
+          <span><strong>Phone:</strong> +91 6280044160 &nbsp;|&nbsp; <strong>Location:</strong> Mohali, Punjab</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. Professional Summary -->
+    <section>
+      <div class="section-title">Professional Summary</div>
+      <p class="resume-text text-justify">
+        Computer Science Engineering student with a strong foundation in Python, C++, and Object-Oriented Programming. Experienced in developing practical software systems including interactive game state algorithms and desktop voice automation utilities. Passionate about mastering Data Structures and Algorithms, modular architecture, and quantitative problem solving. Seeking Software Development and CSE internship opportunities to apply programming fundamentals in a professional engineering environment.
+      </p>
+    </section>
+
+    <!-- 3. Relevant Coursework -->
+    <section>
+      <div class="section-title">Relevant Coursework</div>
+      <p class="resume-text">
+        Data Structures and Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, Computer Architecture, Discrete Mathematics, Software Engineering
+      </p>
+    </section>
+
+    <!-- 4. Technical Skills -->
+    <section>
+      <div class="section-title">Technical Skills</div>
+      <ul class="bullet-list">
+        <li class="bullet-item bullet-item-circle"><strong>Languages:</strong> C++, Python, C, JavaScript</li>
+        <li class="bullet-item bullet-item-circle"><strong>Web Technologies:</strong> HTML5, CSS3</li>
+        <li class="bullet-item bullet-item-circle"><strong>Core Subjects:</strong> Data Structures & Algorithms (DSA), OOP, DBMS, Operating Systems, Computer Networks</li>
+        <li class="bullet-item bullet-item-circle"><strong>Tools:</strong> Git, GitHub, VS Code, Tkinter</li>
+        <li class="bullet-item bullet-item-circle"><strong>Software Engineering:</strong> Modular Coding, Computational Complexity Analysis (Time & Space)</li>
+      </ul>
+    </section>
+
+    <!-- 5. Soft Skills -->
+    <section>
+      <div class="text-[10pt] font-bold text-slate-900 mt-2 mb-1">Soft skills</div>
+      <ul class="bullet-list grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+        <li class="bullet-item">Teamwork & Collaboration</li>
+        <li class="bullet-item">Leadership & Initiative</li>
+        <li class="bullet-item">Critical Thinking & Problem Solving</li>
+        <li class="bullet-item">Time Management & Adaptability</li>
+      </ul>
+    </section>
+
+    <!-- 6. Projects -->
+    <section>
+      <div class="section-title">Projects</div>
+      
+      <!-- Project 1 -->
+      <div class="mb-2.5">
+        <div class="flex items-center justify-between text-[10pt]">
+          <span class="font-bold text-slate-950">Rock-Paper-Scissors Game (User vs Computer)</span>
+          <span class="text-[9pt]"><a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+        </div>
+        <ul class="bullet-list mt-0.5">
+          <li class="bullet-item bullet-item-circle">Developed an interactive game application in Python allowing real-time gameplay between the user and computer AI.</li>
+          <li class="bullet-item bullet-item-circle">Engineered randomized decision algorithms, round evaluation matrices, validation handling, and live score counters.</li>
+          <li class="bullet-item bullet-item-circle"><strong>Tech Stack:</strong> Python, Game State Logic, CLI / Control Flow</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="mb-1">
+        <div class="flex items-center justify-between text-[10pt]">
+          <span class="font-bold text-slate-950">AI Assistant Siri (Desktop Voice Assistant)</span>
+          <span class="text-[9pt]"><a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+        </div>
+        <ul class="bullet-list mt-0.5">
+          <li class="bullet-item bullet-item-circle">Built an intelligent desktop voice assistant in Python utilizing speech recognition and automated query processing.</li>
+          <li class="bullet-item bullet-item-circle">Implemented voice command parsing for web search automation, application triggers, and synthesized voice feedback.</li>
+          <li class="bullet-item bullet-item-circle"><strong>Tech Stack:</strong> Python, SpeechRecognition, Pyttsx3, System / Web Automation</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 7. Education -->
+    <section>
+      <div class="section-title">Education</div>
+      
+      <div class="space-y-1.5">
+        <div>
+          <div class="flex items-center justify-between text-[10pt]">
+            <span class="font-bold text-slate-950">● Lovely Professional University</span>
+            <span class="font-semibold text-slate-700 text-[9pt]">2025 – 2029</span>
+          </div>
+          <div class="text-[9.5pt] text-slate-800 pl-3">
+            <em>Bachelor of Technology, Computer Science and Engineering; Punjab, India</em>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between text-[10pt]">
+            <span class="font-bold text-slate-950">● Lala Deep Chand Jain Public School</span>
+            <span class="font-semibold text-slate-700 text-[9pt]">2025 – 2026</span>
+          </div>
+          <div class="text-[9.5pt] text-slate-800 pl-3">
+            <em>Class XII (Senior Secondary, CBSE Board); <strong>Percentage: 73%</strong></em>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center justify-between text-[10pt]">
+            <span class="font-bold text-slate-950">● Lala Deep Chand Jain Public School</span>
+            <span class="font-semibold text-slate-700 text-[9pt]">2023 – 2024</span>
+          </div>
+          <div class="text-[9.5pt] text-slate-800 pl-3">
+            <em>Class X (Secondary, CBSE Board); <strong>Percentage: 91% (Distinction)</strong></em>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Achievements -->
+    <section>
+      <div class="section-title">Achievements</div>
+      <ul class="bullet-list">
+        <li class="bullet-item bullet-item-circle">
+          <strong>Cleared Jawahar Navodaya Vidyalaya Entrance Exam (JNVST):</strong> Successfully cleared the prestigious national-level competitive examination, recognized for mathematical and analytical aptitude.
+        </li>
+        <li class="bullet-item bullet-item-circle">
+          <strong>C & Python Programming Language Mastery:</strong> Achieved comprehensive proficiency in low-level memory management and pointers in C, alongside automation and application development in Python.
+        </li>
+      </ul>
+    </section>
+
+  </main>
+
+  <script>
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
+  </script>
+</body>
+</html>
