@@ -20,9 +20,9 @@ export const personalInfo = {
   bioShort: "I am a Computer Science Engineering student passionate about programming and problem solving. I am currently learning and practicing C++ and Data Structures & Algorithms while building practical projects with Python.",
   bioLong: "I am pursuing a B.Tech in Computer Science and Engineering at Lovely Professional University. I enjoy learning programming, solving problems and building practical projects. Currently, I am focusing on improving my C++ and Data Structures & Algorithms skills and developing a strong foundation in computer science.",
   
-  // 🔗 REPLACE THESE PLACEHOLDERS WITH YOUR REAL LINKS:
+  // 🔗 Social links:
   socialLinks: {
-    github: "https://github.com/your-username", // <-- REPLACE with your GitHub URL
+    github: "https://github.com/shashankaspirant2007-lgtm",
     linkedin: "https://linkedin.com/in/your-profile", // <-- REPLACE with your LinkedIn URL
     resumeUrl: "#resume", // <-- REPLACE with your Resume PDF link (e.g., "/resume.pdf")
   }
