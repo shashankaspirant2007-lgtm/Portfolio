@@ -23,6 +23,7 @@ export default function Navbar({ darkMode, setDarkMode, onResumeClick }) {
     { name: 'Learning', href: '#learning' },
     { name: 'Projects', href: '#projects' },
     { name: 'Education', href: '#education' },
+    { name: 'Certificates', href: '#certifications' },
     { name: 'Contact', href: '#contact' },
   ];
 

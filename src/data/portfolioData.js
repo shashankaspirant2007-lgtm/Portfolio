@@ -172,3 +172,43 @@ export const achievementsData = [
     description: "Mastered Python programming for building real-world console applications, Tkinter graphical user interfaces (GUIs), automation scripts, and data handling workflows."
   }
 ];
+
+export const certificationData = [
+  {
+    id: "infosys-c",
+    title: "Programming in C",
+    issuer: "Infosys Springboard (Digital Academy)",
+    issueDate: "March 27, 2026",
+    badge: "Verified Course",
+    image: "/certificates/infosys-c-programming.jpg",
+    pdfUrl: "/certificates/infosys-c-programming.pdf",
+    verifyUrl: "https://validate.onwingspan.com",
+    description: "Successfully mastered low-level memory management, pointers, struct data models, dynamic arrays, and structured algorithms in C programming through Infosys Springboard.",
+    credentialId: "Wingspan QR Validated"
+  },
+  {
+    id: "cse101-neo",
+    title: "Computer Programming (CSE101)",
+    issuer: "iamneo / neo colab & Lovely Professional University",
+    issueDate: "May 21, 2026",
+    badge: "150 Hours Coursework",
+    image: "/certificates/cse101-computer-programming.jpg",
+    pdfUrl: "/certificates/cse101-computer-programming.pdf",
+    verifyUrl: "",
+    description: "Certificate of Appreciation awarded for demonstrating strong commitment, consistency, and academic excellence across 150 hours of intensive computer programming.",
+    credentialId: "15Ae0df7Cg2Ch2Di3B11"
+  },
+  {
+    id: "simplilearn-digital",
+    title: "Digital Leadership in Business",
+    issuer: "Simplilearn SkillUp",
+    issueDate: "October 25, 2025",
+    badge: "Verified Completion",
+    image: "/certificates/digital-leadership.jpg",
+    pdfUrl: "/certificates/digital-leadership.pdf",
+    verifyUrl: "",
+    description: "Certificate of Completion recognizing strategic initiative, technological leadership mindset, and digital transformation concepts in modern enterprise workflows.",
+    credentialId: "9237776"
+  }
+];
+
