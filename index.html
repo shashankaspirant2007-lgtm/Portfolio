@@ -152,103 +152,168 @@
     <main class="flex-grow">
       
       <!-- 1. HERO SECTION -->
-      <section id="home" class="relative min-h-screen pt-32 pb-20 flex items-center justify-center overflow-hidden">
-        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[350px] bg-gradient-to-tr from-cyan-500/15 via-blue-600/10 to-emerald-500/10 blur-[110px] rounded-full pointer-events-none -z-10"></div>
+      <section id="home" class="relative min-h-screen pt-28 sm:pt-32 pb-16 sm:pb-20 flex items-center justify-center overflow-hidden">
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[400px] bg-gradient-to-tr from-cyan-500/15 via-blue-600/10 to-emerald-500/10 blur-[120px] rounded-full pointer-events-none -z-10"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div class="flex flex-col items-center text-center max-w-4xl mx-auto space-y-8">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 xl:gap-12 items-center">
             
-            <!-- Focus Pill -->
-            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/30 backdrop-blur-md shadow-sm shadow-cyan-500/10">
-              <span class="relative flex h-2 w-2">
-                <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
-                <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
-              </span>
-              <span class="text-xs font-medium text-slate-300">
-                Actively Practicing <span class="text-cyan-400 font-semibold">C++</span> & <span class="text-emerald-400 font-semibold">DSA</span>
-              </span>
-            </div>
-
-            <!-- Title & Details -->
-            <div class="space-y-3">
-              <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white">
-                Hi, I'm <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 bg-clip-text text-transparent">Shashank Shukla</span>
-              </h1>
-              <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-base sm:text-xl font-medium text-slate-300">
-                <span class="text-cyan-400">Computer Science Engineering Student</span>
-                <span class="text-slate-600 hidden sm:inline">•</span>
-                <span class="text-slate-400 flex items-center gap-1.5 text-sm sm:text-base">
-                  <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400 inline"></i>
-                  Lovely Professional University (2025–2029)
+            <!-- Left Column: Introduction & Details -->
+            <div class="lg:col-span-7 flex flex-col items-center lg:items-start text-center lg:text-left space-y-7 order-2 lg:order-1">
+              
+              <!-- Focus Pill -->
+              <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-slate-900/90 border border-cyan-500/30 backdrop-blur-md shadow-sm shadow-cyan-500/10">
+                <span class="relative flex h-2 w-2">
+                  <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                  <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                </span>
+                <span class="text-xs font-medium text-slate-300">
+                  Actively Practicing <span class="text-cyan-400 font-semibold">C++</span> & <span class="text-emerald-400 font-semibold">DSA</span>
                 </span>
               </div>
-            </div>
 
-            <!-- Exact Introduction Statement -->
-            <p class="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl leading-relaxed font-normal">
-              "I am a Computer Science Engineering student passionate about programming and problem solving. I am currently learning and practicing C++ and Data Structures & Algorithms while building practical projects with Python."
-            </p>
-
-            <!-- Focus Tags -->
-            <div class="flex flex-wrap justify-center gap-3 pt-2">
-              <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-cyan-500/40 text-cyan-300 text-xs font-mono shadow-sm">
-                <i data-lucide="code-2" class="w-4 h-4 text-cyan-400"></i>
-                <span>Currently Learning: C++</span>
+              <!-- Title & Details -->
+              <div class="space-y-3">
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-extrabold tracking-tight text-white leading-[1.15]">
+                  Hi, I'm <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-blue-500 bg-clip-text text-transparent">Shashank Shukla</span>
+                </h1>
+                <div class="flex flex-wrap items-center justify-center lg:justify-start gap-2 sm:gap-4 text-base sm:text-xl font-medium text-slate-300">
+                  <span class="text-cyan-400">Computer Science Engineering Student</span>
+                  <span class="text-slate-600 hidden sm:inline">•</span>
+                  <span class="text-slate-400 flex items-center gap-1.5 text-sm sm:text-base">
+                    <i data-lucide="graduation-cap" class="w-4 h-4 text-blue-400 inline"></i>
+                    Lovely Professional University (2025–2029)
+                  </span>
+                </div>
               </div>
-              <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-emerald-500/40 text-emerald-300 text-xs font-mono shadow-sm">
-                <i data-lucide="binary" class="w-4 h-4 text-emerald-400"></i>
-                <span>Currently Learning: DSA</span>
+
+              <!-- Exact Introduction Statement -->
+              <p class="text-base sm:text-lg lg:text-xl text-slate-300 max-w-2xl leading-relaxed font-normal">
+                "I am a Computer Science Engineering student passionate about programming and problem solving. I am currently learning and practicing C++ and Data Structures & Algorithms while building practical projects with Python."
+              </p>
+
+              <!-- Focus Tags -->
+              <div class="flex flex-wrap justify-center lg:justify-start gap-3 pt-1">
+                <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-cyan-500/40 text-cyan-300 text-xs font-mono shadow-sm">
+                  <i data-lucide="code-2" class="w-4 h-4 text-cyan-400"></i>
+                  <span>Currently Learning: C++</span>
+                </div>
+                <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-emerald-500/40 text-emerald-300 text-xs font-mono shadow-sm">
+                  <i data-lucide="binary" class="w-4 h-4 text-emerald-400"></i>
+                  <span>Currently Learning: DSA</span>
+                </div>
+                <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-amber-500/40 text-amber-300 text-xs font-mono shadow-sm">
+                  <i data-lucide="terminal" class="w-4 h-4 text-amber-400"></i>
+                  <span>Projects: Python</span>
+                </div>
               </div>
-              <div class="flex items-center gap-2 px-3.5 py-1.5 rounded-xl bg-slate-900/80 border border-amber-500/40 text-amber-300 text-xs font-mono shadow-sm">
-                <i data-lucide="terminal" class="w-4 h-4 text-amber-400"></i>
-                <span>Projects: Python</span>
-              </div>
-            </div>
 
-            <!-- Action Buttons -->
-            <div class="flex flex-wrap items-center justify-center gap-3 pt-4 w-full max-w-xl">
-              <a href="#projects" class="flex-1 min-w-[140px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white text-sm font-semibold shadow-lg shadow-cyan-500/25 transition-all hover:scale-[1.02] active:scale-[0.98]">
-                <span>View Projects</span>
-                <i data-lucide="arrow-right" class="w-4 h-4"></i>
-              </a>
-
-              <a href="#learning" class="flex-1 min-w-[140px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-cyan-500/50 text-slate-200 hover:text-white text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]">
-                <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
-                <span>Currently Learning</span>
-              </a>
-
-              <a href="#contact" class="flex-1 min-w-[130px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-white text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]">
-                <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i>
-                <span>Contact Me</span>
-              </a>
-
-              <a href="resume.html" class="flex-1 min-w-[150px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-cyan-950/40 border border-cyan-500/40 hover:border-cyan-400 text-cyan-400 text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]">
-                <i data-lucide="file-text" class="w-4 h-4"></i>
-                <span>View Resume</span>
-              </a>
-            </div>
-
-            <!-- Social Links -->
-            <div class="pt-6 flex flex-col sm:flex-row items-center gap-4 text-slate-400 text-xs">
-              <div class="flex items-center gap-3">
-                <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noreferrer" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="GitHub Profile">
-                  <i data-lucide="github" class="w-4 h-4"></i>
+              <!-- Action Buttons -->
+              <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-2 w-full max-w-xl">
+                <a href="#projects" class="flex-1 min-w-[140px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white text-sm font-semibold shadow-lg shadow-cyan-500/25 transition-all hover:scale-[1.02] active:scale-[0.98]">
+                  <span>View Projects</span>
+                  <i data-lucide="arrow-right" class="w-4 h-4"></i>
                 </a>
 
-                <button onclick="triggerPlaceholderModal('LinkedIn Profile', 'https://linkedin.com/in/your-profile')" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="LinkedIn Profile">
-                  <i data-lucide="linkedin" class="w-4 h-4"></i>
-                </button>
+                <a href="#learning" class="flex-1 min-w-[140px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 hover:border-cyan-500/50 text-slate-200 hover:text-white text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]">
+                  <i data-lucide="sparkles" class="w-4 h-4 text-cyan-400"></i>
+                  <span>Currently Learning</span>
+                </a>
 
-                <a href="mailto:shashankaspirant2007@gmail.com" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="Email Shashank">
-                  <i data-lucide="mail" class="w-4 h-4"></i>
+                <a href="#contact" class="flex-1 min-w-[130px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 hover:text-white text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]">
+                  <i data-lucide="mail" class="w-4 h-4 text-blue-400"></i>
+                  <span>Contact Me</span>
+                </a>
+
+                <a href="resume.html" class="flex-1 min-w-[150px] flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-slate-900 hover:bg-cyan-950/40 border border-cyan-500/40 hover:border-cyan-400 text-cyan-400 text-sm font-semibold transition-all hover:scale-[1.02] active:scale-[0.98]">
+                  <i data-lucide="file-text" class="w-4 h-4"></i>
+                  <span>View Resume</span>
                 </a>
               </div>
 
-              <div class="hidden sm:block text-slate-700">|</div>
+              <!-- Social Links -->
+              <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 text-slate-400 text-xs">
+                <div class="flex items-center gap-3">
+                  <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noreferrer" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="GitHub Profile">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                  </a>
 
-              <div class="flex items-center gap-1.5 text-slate-400">
-                <i data-lucide="map-pin" class="w-3.5 h-3.5 text-rose-400"></i>
-                <span>SAS Nagar, Mohali, Punjab</span>
+                  <a href="https://www.linkedin.com/in/shashank-shukla" target="_blank" rel="noreferrer" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="LinkedIn Profile">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                  </a>
+
+                  <a href="mailto:shashankaspirant2007@gmail.com" class="p-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="Email Shashank">
+                    <i data-lucide="mail" class="w-4 h-4"></i>
+                  </a>
+                </div>
+
+                <div class="hidden sm:block text-slate-700">|</div>
+
+                <div class="flex items-center gap-1.5 text-slate-400">
+                  <i data-lucide="map-pin" class="w-3.5 h-3.5 text-rose-400"></i>
+                  <span>SAS Nagar, Mohali, Punjab</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Column: Profile Photo Card -->
+            <div class="lg:col-span-5 flex justify-center items-center relative order-1 lg:order-2">
+              <div class="relative w-full max-w-[280px] sm:max-w-[340px] lg:max-w-[380px] group">
+                
+                <!-- Ambient Glow Behind Photo -->
+                <div class="absolute -inset-1.5 bg-gradient-to-tr from-cyan-500/30 via-blue-500/20 to-emerald-500/30 rounded-3xl blur-2xl opacity-70 group-hover:opacity-100 transition duration-700 pointer-events-none"></div>
+                
+                <!-- Card Container with Elegant Border -->
+                <div class="relative p-2 rounded-3xl bg-slate-900/90 border border-cyan-500/30 shadow-2xl backdrop-blur-xl transition-all duration-300 group-hover:border-cyan-400/60">
+                  
+                  <!-- Inner Photo Wrapper -->
+                  <div class="relative rounded-2xl overflow-hidden bg-slate-950 aspect-[4/5] shadow-inner">
+                    <img 
+                      src="public/shashank-profile.jpg" 
+                      alt="Shashank Shukla - Computer Science Engineering Student" 
+                      class="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                      onerror="if(this.src.indexOf('shashank-profile.jpg')!==-1&&this.src.indexOf('public/')!==-1){this.src='shashank-profile.jpg';}"
+                      loading="eager"
+                    />
+                    
+                    <!-- Bottom Gradient Overlay & Floating Badge -->
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-950/95 via-slate-950/60 to-transparent p-4 pt-10 flex items-center justify-between">
+                      <div class="flex items-center gap-2.5">
+                        <span class="relative flex h-2.5 w-2.5">
+                          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                          <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
+                        </span>
+                        <div>
+                          <p class="text-xs font-bold text-white tracking-wide">Shashank Shukla</p>
+                          <p class="text-[11px] text-cyan-400 font-mono">CSE Student • LPU</p>
+                        </div>
+                      </div>
+                      
+                      <div class="px-2.5 py-1 rounded-lg bg-slate-900/90 border border-cyan-500/30 backdrop-blur-md shadow-sm">
+                        <span class="text-[11px] font-mono font-semibold text-cyan-300">2025–2029</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Decorative Tech Corner Dots -->
+                  <div class="absolute top-4 left-4 w-1.5 h-1.5 rounded-full bg-cyan-400/60 pointer-events-none"></div>
+                  <div class="absolute top-4 right-4 w-1.5 h-1.5 rounded-full bg-blue-400/60 pointer-events-none"></div>
+
+                </div>
+
+                <!-- Floating Code / Language Badge -->
+                <div class="absolute -bottom-4 -left-3 sm:-left-5 hidden sm:flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-950/90 border border-cyan-500/40 backdrop-blur-md shadow-xl shadow-cyan-500/10">
+                  <i data-lucide="code-2" class="w-4 h-4 text-cyan-400"></i>
+                  <span class="text-xs font-mono font-semibold text-slate-200">C++ & DSA</span>
+                </div>
+
+                <!-- Floating LPU Crest Badge -->
+                <div class="absolute -top-3 -right-2 sm:-right-4 flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-slate-950/90 border border-blue-500/40 backdrop-blur-md shadow-xl shadow-blue-500/10">
+                  <i data-lucide="graduation-cap" class="w-3.5 h-3.5 text-blue-400"></i>
+                  <span class="text-[11px] font-mono font-medium text-slate-300">LPU Punjab</span>
+                </div>
+
               </div>
             </div>
 
@@ -702,28 +767,29 @@
                 </div>
 
                 <p class="text-slate-300 text-sm leading-relaxed mb-5">
-                  An interactive Rock-Paper-Scissors game where the user plays against the computer in real time. Implements game loops, random selection algorithms, input validation, and score tracking logic in Python.
+                  An interactive game application in Python allowing real-time gameplay between the user and computer AI. Implements game state management, input validation, and decision matrices.
                 </p>
 
                 <div class="space-y-1.5 mb-6 text-xs text-slate-400">
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Interactive player vs computer game loop</span></div>
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Randomized opponent logic & decision matrix</span></div>
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Live score counter and replay mechanism</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Real-time gameplay between user and computer AI</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Randomized decision algorithms & round evaluation matrices</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Optimized state management & smooth CLI interaction</span></div>
                 </div>
               </div>
 
               <div class="pt-4 border-t border-slate-800 space-y-4">
-                <div class="flex gap-2">
+                <div class="flex flex-wrap gap-2">
                   <span class="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono">Python</span>
-                  <span class="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono">Game Logic</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono">Game State Logic</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono">CLI / Control Flow</span>
                 </div>
                 <div class="flex items-center gap-3">
-                  <button onclick="triggerPlaceholderModal('GitHub Repository - Rock Paper Scissors', 'https://github.com/your-username/rock-paper-scissors')" class="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 text-xs font-medium">
+                  <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 text-xs font-medium transition-colors">
                     <i data-lucide="github" class="w-3.5 h-3.5 text-slate-400"></i>
                     <span>GitHub Repo</span>
-                  </button>
-                  <button onclick="triggerPlaceholderModal('Live Demo / Run Instructions', 'Run in terminal using: python rock_paper_scissors.py')" class="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-xs font-medium">
-                    <i data-lucide="external-link" class="w-3.5 h-3.5 text-cyan-400"></i>
+                  </a>
+                  <button onclick="triggerPlaceholderModal('Run Instructions', 'Run in terminal using: python rock_paper_scissors.py')" class="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-xs font-medium">
+                    <i data-lucide="terminal" class="w-3.5 h-3.5 text-cyan-400"></i>
                     <span>Run Guide</span>
                   </button>
                 </div>
@@ -739,46 +805,41 @@
                   </div>
                   <div>
                     <span class="text-[11px] font-mono text-cyan-400 uppercase tracking-wider block">AI / Automation</span>
-                    <h3 class="text-xl font-bold text-white">AI Assistant Siri</h3>
+                    <h3 class="text-xl font-bold text-white">AI Assistant Siri (Desktop Voice Assistant)</h3>
                   </div>
                 </div>
 
                 <p class="text-slate-300 text-sm leading-relaxed mb-5">
-                  An intelligent desktop AI voice assistant developed using Python. Recognizes voice commands, performs web searches, automates everyday desktop workflows, and delivers speech feedback.
+                  An intelligent desktop voice assistant in Python utilizing speech recognition, automated query processing, and voice synthesis feedback.
                 </p>
 
                 <div class="space-y-1.5 mb-6 text-xs text-slate-400">
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Voice command recognition & speech synthesis</span></div>
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Automated task execution & web searches</span></div>
-                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Modular intent parsing and query handler</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Speech recognition & automated query processing</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Voice command parsing, web search & app triggers</span></div>
+                  <div class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-cyan-400"></i><span>Modular command pipeline for new automation routines</span></div>
                 </div>
               </div>
 
               <div class="pt-4 border-t border-slate-800 space-y-4">
-                <div class="flex gap-2">
+                <div class="flex flex-wrap gap-2">
                   <span class="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono">Python</span>
                   <span class="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono">SpeechRecognition</span>
                   <span class="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono">Pyttsx3</span>
+                  <span class="px-2.5 py-1 rounded-md bg-slate-950 border border-slate-800 text-slate-300 text-xs font-mono">System Automation</span>
                 </div>
                 <div class="flex items-center gap-3">
-                  <button onclick="triggerPlaceholderModal('GitHub Repository - AI Assistant Siri', 'https://github.com/your-username/ai-assistant-siri')" class="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 text-xs font-medium">
+                  <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer" class="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 text-slate-300 text-xs font-medium transition-colors">
                     <i data-lucide="github" class="w-3.5 h-3.5 text-slate-400"></i>
                     <span>GitHub Repo</span>
-                  </button>
-                  <button onclick="triggerPlaceholderModal('Live Demo / Run Instructions', 'Run in terminal using: python siri_assistant.py')" class="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-xs font-medium">
-                    <i data-lucide="external-link" class="w-3.5 h-3.5 text-cyan-400"></i>
+                  </a>
+                  <button onclick="triggerPlaceholderModal('Run Instructions', 'Run in terminal using: python siri_assistant.py')" class="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-xs font-medium">
+                    <i data-lucide="terminal" class="w-3.5 h-3.5 text-cyan-400"></i>
                     <span>Run Guide</span>
                   </button>
                 </div>
               </div>
             </div>
 
-          </div>
-
-          <div class="mt-10 p-4 rounded-xl bg-slate-900/40 border border-slate-800 text-center max-w-xl mx-auto">
-            <p class="text-xs text-slate-400">
-              <span class="text-cyan-400 font-semibold">Customization Note:</span> Replace placeholders with your own GitHub project repositories in <code class="text-slate-200 font-mono">src/data/portfolioData.js</code> or inside <code class="text-slate-200 font-mono">index.html</code>.
-            </p>
           </div>
 
         </div>
@@ -1366,9 +1427,9 @@
             <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noreferrer" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="GitHub Profile">
               <i data-lucide="github" class="w-4 h-4"></i>
             </a>
-            <button onclick="triggerPlaceholderModal('LinkedIn Profile', 'https://linkedin.com/in/your-profile')" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="LinkedIn">
+            <a href="https://www.linkedin.com/in/shashank-shukla" target="_blank" rel="noreferrer" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="LinkedIn">
               <i data-lucide="linkedin" class="w-4 h-4"></i>
-            </button>
+            </a>
             <a href="mailto:shashankaspirant2007@gmail.com" class="p-2 rounded-lg bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white transition-colors" title="Email">
               <i data-lucide="mail" class="w-4 h-4"></i>
             </a>

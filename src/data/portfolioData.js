@@ -19,12 +19,13 @@ export const personalInfo = {
   phone: "6280044160",
   bioShort: "I am a Computer Science Engineering student passionate about programming and problem solving. I am currently learning and practicing C++ and Data Structures & Algorithms while building practical projects with Python.",
   bioLong: "I am pursuing a B.Tech in Computer Science and Engineering at Lovely Professional University. I enjoy learning programming, solving problems and building practical projects. Currently, I am focusing on improving my C++ and Data Structures & Algorithms skills and developing a strong foundation in computer science.",
+  photo: "public/shashank-profile.jpg",
   
   // 🔗 Social links:
   socialLinks: {
     github: "https://github.com/shashankaspirant2007-lgtm",
-    linkedin: "https://linkedin.com/in/your-profile", // <-- REPLACE with your LinkedIn URL
-    resumeUrl: "#resume", // <-- REPLACE with your Resume PDF link (e.g., "/resume.pdf")
+    linkedin: "https://www.linkedin.com/in/shashank-shukla",
+    resumeUrl: "public/resume.pdf",
   }
 };
 
@@ -94,22 +95,30 @@ export const projectsData = [
     id: "rock-paper-scissors",
     title: "Rock-Paper-Scissors Game (User vs Computer)",
     category: "Python Game / Logic",
-    technology: ["Python"],
-    description: "An interactive Rock-Paper-Scissors game where the user plays against the computer in real time. Implements game loops, random selection algorithms, input validation, and score tracking logic in Python.",
-    highlights: ["Interactive player vs computer game loop", "Randomized computer logic & decision evaluation", "Live score counter and replay mechanism"],
-    githubUrl: "https://github.com/your-username/rock-paper-scissors", // <-- Placeholder
-    liveDemoUrl: "", // <-- Placeholder (Console based)
+    technology: ["Python", "Game State Logic", "CLI / Control Flow"],
+    description: "An interactive game application in Python allowing real-time gameplay between the user and computer AI. Implements game state management, input validation, and decision matrices.",
+    highlights: [
+      "Developed an interactive game application in Python allowing real-time gameplay between the user and computer AI.",
+      "Engineered randomized decision algorithms, round evaluation matrices, validation handling, and live score counters.",
+      "Optimized game state management and input verification to deliver smooth CLI interaction without runtime faults."
+    ],
+    githubUrl: "https://github.com/shashankaspirant2007-lgtm",
+    liveDemoUrl: "",
     isConsole: true
   },
   {
     id: "ai-assistant-siri",
-    title: "AI Assistant Siri",
+    title: "AI Assistant Siri (Desktop Voice Assistant)",
     category: "AI / Automation",
-    technology: ["Python", "SpeechRecognition", "Pyttsx3"],
-    description: "An intelligent desktop AI voice assistant developed using Python. Recognizes voice commands, performs web searches, automates everyday desktop workflows, and delivers speech feedback.",
-    highlights: ["Voice command recognition & speech synthesis", "Automated task execution & web searches", "Modular intent parsing and query handler"],
-    githubUrl: "https://github.com/your-username/ai-assistant-siri", // <-- Placeholder
-    liveDemoUrl: "", // <-- Placeholder
+    technology: ["Python", "SpeechRecognition", "Pyttsx3", "System / Web Automation"],
+    description: "An intelligent desktop voice assistant in Python utilizing speech recognition, automated query processing, and voice synthesis feedback.",
+    highlights: [
+      "Built an intelligent desktop voice assistant in Python utilizing speech recognition and automated query processing.",
+      "Implemented voice command parsing for web search automation, application triggers, and synthesized voice feedback.",
+      "Architected modular command execution pipeline enabling seamless addition of new system tasks and automation routines."
+    ],
+    githubUrl: "https://github.com/shashankaspirant2007-lgtm",
+    liveDemoUrl: "",
     isConsole: false
   }
 ];

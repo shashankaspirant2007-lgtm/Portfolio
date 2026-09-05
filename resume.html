@@ -7,6 +7,8 @@
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   
   <style>
@@ -15,8 +17,8 @@
     }
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: #0f172a;
-      color: #1e293b;
+      background-color: #0b1120;
+      color: #0f172a;
       margin: 0;
       padding: 0;
       -webkit-font-smoothing: antialiased;
@@ -24,26 +26,26 @@
     .resume-sheet {
       background-color: #ffffff;
       width: 100%;
-      max-width: 850px;
-      margin: 24px auto;
-      padding: 36px 44px;
-      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+      max-width: 820px;
+      margin: 20px auto 40px auto;
+      padding: 34px 44px;
+      box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
       border-radius: 4px;
     }
-    .section-title {
+    .section-heading {
       font-size: 11pt;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 0.05em;
-      color: #0f172a;
-      border-bottom: 1.5px solid #0f172a;
+      color: #1e3a8a;
+      border-bottom: 1.5px solid #1e3a8a;
       padding-bottom: 2px;
-      margin-top: 12px;
+      margin-top: 13px;
       margin-bottom: 6px;
     }
     .resume-text {
-      font-size: 9.5pt;
-      line-height: 1.38;
+      font-size: 9.3pt;
+      line-height: 1.4;
       color: #1e293b;
     }
     .bullet-list {
@@ -54,9 +56,10 @@
     .bullet-item {
       position: relative;
       padding-left: 14px;
-      margin-bottom: 3px;
-      font-size: 9.5pt;
-      line-height: 1.35;
+      margin-bottom: 2.5px;
+      font-size: 9.2pt;
+      line-height: 1.34;
+      color: #1e293b;
     }
     .bullet-item::before {
       content: "•";
@@ -65,22 +68,17 @@
       color: #0f172a;
       font-weight: bold;
     }
-    .bullet-item-circle::before {
-      content: "●";
-      font-size: 7pt;
-      top: -0.5px;
-    }
     a {
-      color: #0284c7;
+      color: #1d4ed8;
       text-decoration: underline;
     }
     a:hover {
-      color: #0369a1;
+      color: #1e40af;
     }
     @media print {
       @page {
         size: A4 portrait;
-        margin: 10mm 14mm;
+        margin: 8mm 12mm;
       }
       body {
         background-color: #ffffff !important;
@@ -99,9 +97,10 @@
         max-width: 100% !important;
         width: 100% !important;
       }
-      .section-title {
-        border-bottom: 1.5px solid #000000 !important;
-        margin-top: 10px !important;
+      .section-heading {
+        border-bottom: 1.5px solid #1e3a8a !important;
+        color: #1e3a8a !important;
+        margin-top: 11px !important;
         margin-bottom: 4px !important;
       }
     }
@@ -110,18 +109,23 @@
 <body class="min-h-screen py-6 px-4">
 
   <!-- Top Action Navigation Bar (Hidden when Printing) -->
-  <div class="max-w-[850px] mx-auto mb-4 flex flex-wrap items-center justify-between gap-3 no-print bg-slate-900 border border-slate-800 p-3 rounded-xl shadow-lg">
-    <div class="flex items-center gap-3">
-      <a href="index.html" class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-all border border-slate-700 text-decoration-none">
+  <div class="max-w-[820px] mx-auto mb-4 flex flex-wrap items-center justify-between gap-3 no-print bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl shadow-xl backdrop-blur-md">
+    <div class="flex items-center gap-2.5">
+      <a href="index.html" class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-200 transition-all border border-slate-700 text-decoration-none">
         <i data-lucide="arrow-left" class="w-4 h-4 text-cyan-400"></i>
         <span>Portfolio Home</span>
       </a>
+      <span class="text-xs font-mono text-slate-400 hidden sm:inline">• Official ATS Format</span>
     </div>
 
-    <div class="flex items-center gap-2">
-      <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-xs font-bold text-white shadow-md shadow-cyan-500/20 transition-all cursor-pointer">
+    <div class="flex items-center gap-2.5">
+      <a href="public/resume.pdf" download="Shashank-Shukla-Resume.pdf" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/40 text-xs font-bold text-cyan-300 transition-all text-decoration-none">
+        <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i>
+        <span>Download Official PDF</span>
+      </a>
+      <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-xs font-bold text-white shadow-md shadow-cyan-500/20 transition-all cursor-pointer border-0">
         <i data-lucide="printer" class="w-4 h-4"></i>
-        <span>Print / Save as PDF (1 Page)</span>
+        <span>Print (1 Page)</span>
       </button>
     </div>
   </div>
@@ -130,161 +134,171 @@
   <main class="resume-sheet">
     
     <!-- 1. Header Section -->
-    <header class="mb-2">
-      <h1 class="text-2xl sm:text-[26pt] font-extrabold text-slate-950 tracking-tight leading-none mb-1.5">
+    <header class="mb-1">
+      <h1 class="text-[24pt] sm:text-[26pt] font-extrabold text-[#1e3a8a] tracking-tight leading-none mb-2">
         Shashank Shukla
       </h1>
       
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-1 text-[9.5pt] text-slate-800">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-0.5 text-[9.3pt] text-slate-900 leading-snug">
         <div>
-          <span><strong>LinkedIn:</strong> <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/shashank-shukla</a></span>
+          <span><strong>LinkedIn:</strong> <a href="http://www.linkedin.com/in/shashank-shukla" target="_blank" rel="noopener noreferrer">http://www.linkedin.com/in/shashank-shukla</a></span>
         </div>
         <div class="sm:text-right">
-          <span><strong>Email:</strong> <a href="mailto:shashankaspirant2007@gmail.com" class="text-slate-800 no-underline hover:underline">shashankaspirant2007@gmail.com</a></span>
+          <span><strong>Email:</strong> <a href="mailto:shashankaspirant2007@gmail.com" class="text-slate-900">shashankaspirant2007@gmail.com</a></span>
         </div>
         <div>
-          <span><strong>GitHub:</strong> <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer">github.com/shashankaspirant2007-lgtm</a></span>
+          <span><strong>Github:</strong> <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer">https://github.com/shashankaspirant2007-lgtm</a></span>
         </div>
         <div class="sm:text-right">
-          <span><strong>Phone:</strong> +91 6280044160 &nbsp;|&nbsp; <strong>Location:</strong> Mohali, Punjab</span>
+          <span><strong>Mobile:</strong> +91 6280044160</span>
         </div>
       </div>
     </header>
 
-    <!-- 2. Professional Summary -->
+    <!-- 2. SKILLS -->
     <section>
-      <div class="section-title">Professional Summary</div>
-      <p class="resume-text text-justify">
-        Computer Science Engineering student with a strong foundation in Python, C++, and Object-Oriented Programming. Experienced in developing practical software systems including interactive game state algorithms and desktop voice automation utilities. Passionate about mastering Data Structures and Algorithms, modular architecture, and quantitative problem solving. Seeking Software Development and CSE internship opportunities to apply programming fundamentals in a professional engineering environment.
-      </p>
+      <div class="section-heading">SKILLS</div>
+      <div class="resume-text space-y-0.5">
+        <div><strong>Languages:</strong> C++, Python, C, JavaScript</div>
+        <div><strong>Web Technologies:</strong> HTML5, CSS3</div>
+        <div><strong>Tools/Platforms:</strong> Git, GitHub, VS Code, Tkinter</div>
+        <div><strong>Core Subjects:</strong> Data Structures & Algorithms (DSA), OOP, DBMS, Operating Systems, Computer Networks</div>
+        <div><strong>Soft Skills:</strong> Problem-Solving, Team Player, Leadership & Initiative, Time Management & Adaptability</div>
+      </div>
     </section>
 
-    <!-- 3. Relevant Coursework -->
+    <!-- 3. PROJECTS -->
     <section>
-      <div class="section-title">Relevant Coursework</div>
-      <p class="resume-text">
-        Data Structures and Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, Computer Architecture, Discrete Mathematics, Software Engineering
-      </p>
-    </section>
-
-    <!-- 4. Technical Skills -->
-    <section>
-      <div class="section-title">Technical Skills</div>
-      <ul class="bullet-list">
-        <li class="bullet-item bullet-item-circle"><strong>Languages:</strong> C++, Python, C, JavaScript</li>
-        <li class="bullet-item bullet-item-circle"><strong>Web Technologies:</strong> HTML5, CSS3</li>
-        <li class="bullet-item bullet-item-circle"><strong>Core Subjects:</strong> Data Structures & Algorithms (DSA), OOP, DBMS, Operating Systems, Computer Networks</li>
-        <li class="bullet-item bullet-item-circle"><strong>Tools:</strong> Git, GitHub, VS Code, Tkinter</li>
-        <li class="bullet-item bullet-item-circle"><strong>Software Engineering:</strong> Modular Coding, Computational Complexity Analysis (Time & Space)</li>
-      </ul>
-    </section>
-
-    <!-- 5. Soft Skills -->
-    <section>
-      <div class="text-[10pt] font-bold text-slate-900 mt-2 mb-1">Soft skills</div>
-      <ul class="bullet-list grid grid-cols-1 sm:grid-cols-2 gap-x-4">
-        <li class="bullet-item">Teamwork & Collaboration</li>
-        <li class="bullet-item">Leadership & Initiative</li>
-        <li class="bullet-item">Critical Thinking & Problem Solving</li>
-        <li class="bullet-item">Time Management & Adaptability</li>
-      </ul>
-    </section>
-
-    <!-- 6. Projects -->
-    <section>
-      <div class="section-title">Projects</div>
+      <div class="section-heading">PROJECTS</div>
       
       <!-- Project 1 -->
-      <div class="mb-2.5">
-        <div class="flex items-center justify-between text-[10pt]">
-          <span class="font-bold text-slate-950">Rock-Paper-Scissors Game (User vs Computer)</span>
-          <span class="text-[9pt]"><a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+      <div class="mb-2">
+        <div class="flex items-baseline justify-between text-[9.5pt]">
+          <div>
+            <span class="font-bold text-slate-950">Rock-Paper-Scissors Game (User vs Computer)</span>
+            <span class="text-slate-400 mx-1">|</span>
+            <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#1e3a8a]">GITHUB</a>
+          </div>
+          <span class="text-[9pt] font-semibold text-slate-800">Jul’ 24</span>
         </div>
         <ul class="bullet-list mt-0.5">
-          <li class="bullet-item bullet-item-circle">Developed an interactive game application in Python allowing real-time gameplay between the user and computer AI.</li>
-          <li class="bullet-item bullet-item-circle">Engineered randomized decision algorithms, round evaluation matrices, validation handling, and live score counters.</li>
-          <li class="bullet-item bullet-item-circle"><strong>Tech Stack:</strong> Python, Game State Logic, CLI / Control Flow</li>
+          <li class="bullet-item">Developed an interactive game application in Python allowing real-time gameplay between the user and computer AI.</li>
+          <li class="bullet-item">Engineered randomized decision algorithms, round evaluation matrices, validation handling, and live score counters.</li>
+          <li class="bullet-item">Optimized game state management and input verification to deliver smooth CLI interaction without runtime faults.</li>
         </ul>
+        <div class="text-[8.8pt] text-slate-800 mt-0.5 pl-3.5">
+          <strong>Tech Stack:</strong> Python, Game State Logic, CLI / Control Flow
+        </div>
       </div>
 
       <!-- Project 2 -->
       <div class="mb-1">
-        <div class="flex items-center justify-between text-[10pt]">
-          <span class="font-bold text-slate-950">AI Assistant Siri (Desktop Voice Assistant)</span>
-          <span class="text-[9pt]"><a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer">GitHub</a></span>
+        <div class="flex items-baseline justify-between text-[9.5pt]">
+          <div>
+            <span class="font-bold text-slate-950">AI Assistant Siri (Desktop Voice Assistant)</span>
+            <span class="text-slate-400 mx-1">|</span>
+            <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#1e3a8a]">GITHUB</a>
+          </div>
+          <span class="text-[9pt] font-semibold text-slate-800">Aug’ 24</span>
         </div>
         <ul class="bullet-list mt-0.5">
-          <li class="bullet-item bullet-item-circle">Built an intelligent desktop voice assistant in Python utilizing speech recognition and automated query processing.</li>
-          <li class="bullet-item bullet-item-circle">Implemented voice command parsing for web search automation, application triggers, and synthesized voice feedback.</li>
-          <li class="bullet-item bullet-item-circle"><strong>Tech Stack:</strong> Python, SpeechRecognition, Pyttsx3, System / Web Automation</li>
+          <li class="bullet-item">Built an intelligent desktop voice assistant in Python utilizing speech recognition and automated query processing.</li>
+          <li class="bullet-item">Implemented voice command parsing for web search automation, application triggers, and synthesized voice feedback.</li>
+          <li class="bullet-item">Architected modular command execution pipeline enabling seamless addition of new system tasks and automation routines.</li>
+        </ul>
+        <div class="text-[8.8pt] text-slate-800 mt-0.5 pl-3.5">
+          <strong>Tech Stack:</strong> Python, SpeechRecognition, Pyttsx3, System / Web Automation
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. TRAINING -->
+    <section>
+      <div class="section-heading">TRAINING</div>
+      <div class="mb-1">
+        <div class="flex items-baseline justify-between text-[9.5pt]">
+          <div>
+            <span class="font-bold text-slate-950">Cyber Security & Safe Internet Practices</span>
+            <span class="text-slate-400 mx-1">|</span>
+            <span class="font-semibold text-slate-800">Community Development Program</span>
+            <span class="text-slate-400 mx-1">|</span>
+            <span class="font-semibold text-slate-800">Certificate</span>
+          </div>
+          <span class="text-[9pt] font-semibold text-slate-800">May’ 26 – Jun’ 26</span>
+        </div>
+        <ul class="bullet-list mt-0.5">
+          <li class="bullet-item">Conducted interactive cybersecurity awareness sessions for 100+ school students, focusing on cyber threats, phishing scams, and safe internet browsing habits.</li>
+          <li class="bullet-item">Delivered hands-on sessions on credential hygiene, two-factor/OTP verification security, personal data privacy, and mitigation of online financial fraud.</li>
+          <li class="bullet-item">Promoted digital safety and responsible social media usage across the community, completing 30+ hours of dedicated educational outreach.</li>
         </ul>
       </div>
     </section>
 
-    <!-- 7. Education -->
+    <!-- 5. CERTIFICATES -->
     <section>
-      <div class="section-title">Education</div>
-      
-      <div class="space-y-1.5">
-        <div>
-          <div class="flex items-center justify-between text-[10pt]">
-            <span class="font-bold text-slate-950">● Lovely Professional University</span>
-            <span class="font-semibold text-slate-700 text-[9pt]">2025 – 2029</span>
-          </div>
-          <div class="text-[9.5pt] text-slate-800 pl-3">
-            <em>Bachelor of Technology, Computer Science and Engineering; Punjab, India</em>
-          </div>
+      <div class="section-heading">CERTIFICATES</div>
+      <div class="resume-text space-y-1">
+        <div class="flex items-center justify-between">
+          <span><strong>Computer Programming</strong> | iamneo</span>
+          <span class="font-semibold text-slate-800 text-[9pt]">May’ 26</span>
         </div>
-
-        <div>
-          <div class="flex items-center justify-between text-[10pt]">
-            <span class="font-bold text-slate-950">● Lala Deep Chand Jain Public School</span>
-            <span class="font-semibold text-slate-700 text-[9pt]">2025 – 2026</span>
-          </div>
-          <div class="text-[9.5pt] text-slate-800 pl-3">
-            <em>Class XII (Senior Secondary, CBSE Board); <strong>Percentage: 73%</strong></em>
-          </div>
+        <div class="flex items-center justify-between">
+          <span><strong>Programming in C</strong> | Infosys Springboard</span>
+          <span class="font-semibold text-slate-800 text-[9pt]">Mar’ 26</span>
         </div>
-
-        <div>
-          <div class="flex items-center justify-between text-[10pt]">
-            <span class="font-bold text-slate-950">● Lala Deep Chand Jain Public School</span>
-            <span class="font-semibold text-slate-700 text-[9pt]">2023 – 2024</span>
-          </div>
-          <div class="text-[9.5pt] text-slate-800 pl-3">
-            <em>Class X (Secondary, CBSE Board); <strong>Percentage: 91% (Distinction)</strong></em>
-          </div>
+        <div class="flex items-center justify-between">
+          <span><strong>Digital Leadership in Business</strong> | Simplilearn</span>
+          <span class="font-semibold text-slate-800 text-[9pt]">Oct’ 25</span>
         </div>
       </div>
     </section>
 
-    <!-- 8. Certifications -->
+    <!-- 6. RELEVANT COURSEWORK -->
     <section>
-      <div class="section-title">Certifications</div>
-      <ul class="bullet-list">
-        <li class="bullet-item bullet-item-circle">
-          <strong>Programming in C:</strong> Infosys Springboard / Digital Academy (Issued: March 2026) — Comprehensive coursework covering low-level pointers, dynamic memory allocation, and algorithmic design in C.
-        </li>
-        <li class="bullet-item bullet-item-circle">
-          <strong>Computer Programming (CSE101, 150 Hours):</strong> iamneo / neo colab & Lovely Professional University (Issued: May 2026, ID: 15Ae0df7Cg2Ch2Di3B11) — Awarded Certificate of Appreciation for intensive 150-hour programming curriculum.
-        </li>
-        <li class="bullet-item bullet-item-circle">
-          <strong>Digital Leadership in Business:</strong> Simplilearn SkillUp (Issued: October 2025, Code: 9237776) — Completed professional coursework in technology adoption, digital transformations, and modern leadership.
-        </li>
-      </ul>
+      <div class="section-heading">RELEVANT COURSEWORK</div>
+      <p class="resume-text leading-snug">
+        Data Structures & Algorithms (DSA), Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems, Computer Architecture, Discrete Mathematics, Software Engineering
+      </p>
     </section>
 
-    <!-- 9. Achievements -->
+    <!-- 7. EDUCATION -->
     <section>
-      <div class="section-title">Achievements</div>
-      <ul class="bullet-list">
-        <li class="bullet-item bullet-item-circle">
-          <strong>Cleared Jawahar Navodaya Vidyalaya Entrance Exam (JNVST):</strong> Successfully cleared the prestigious national-level competitive examination, recognized for mathematical and analytical aptitude.
-        </li>
-        <li class="bullet-item bullet-item-circle">
-          <strong>C & Python Programming Language Mastery:</strong> Achieved comprehensive proficiency in low-level memory management and pointers in C, alongside automation and application development in Python.
-        </li>
-      </ul>
+      <div class="section-heading">EDUCATION</div>
+      
+      <div class="space-y-1.5">
+        <div>
+          <div class="flex items-baseline justify-between text-[9.5pt]">
+            <span class="font-bold text-slate-950">Lovely Professional University</span>
+            <span class="text-slate-800 text-[9pt]">Phagwara, Punjab</span>
+          </div>
+          <div class="flex items-baseline justify-between text-[9.3pt] text-slate-800">
+            <span>Bachelor of Technology in Computer Science and Engineering</span>
+            <span class="font-semibold text-[9pt]">2025 – 2029</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-baseline justify-between text-[9.5pt]">
+            <span class="font-bold text-slate-950">Lala Deep Chand Jain Public School</span>
+            <span class="text-slate-800 text-[9pt]">Mohali, Punjab</span>
+          </div>
+          <div class="flex items-baseline justify-between text-[9.3pt] text-slate-800">
+            <span>Class XII (Senior Secondary, CBSE Board); Percentage: 73%</span>
+            <span class="font-semibold text-[9pt]">2025 – 2026</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-baseline justify-between text-[9.5pt]">
+            <span class="font-bold text-slate-950">Lala Deep Chand Jain Public School</span>
+            <span class="text-slate-800 text-[9pt]">Mohali, Punjab</span>
+          </div>
+          <div class="flex items-baseline justify-between text-[9.3pt] text-slate-800">
+            <span>Class X (Secondary, CBSE Board); Percentage: 91% (Distinction)</span>
+            <span class="font-semibold text-[9pt]">2023 – 2024</span>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
