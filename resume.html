@@ -118,15 +118,54 @@
       <span class="text-xs font-mono text-slate-400 hidden sm:inline">• Official ATS Format</span>
     </div>
 
-    <div class="flex items-center gap-2.5">
-      <a href="public/resume.pdf" download="Shashank-Shukla-Resume.pdf" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/40 text-xs font-bold text-cyan-300 transition-all text-decoration-none">
-        <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i>
-        <span>Download Official PDF</span>
+    <!-- View Mode Switcher & Actions -->
+    <div class="flex flex-wrap items-center gap-2">
+      <div class="flex items-center bg-slate-950 p-1 rounded-lg border border-slate-800">
+        <button id="viewSheetBtn" onclick="switchResumeView('sheet')" class="px-3 py-1.5 rounded-md text-xs font-semibold transition-all bg-cyan-500 text-slate-950 shadow">
+          Web View
+        </button>
+        <button id="viewPdfBtn" onclick="switchResumeView('pdf')" class="px-3 py-1.5 rounded-md text-xs font-semibold transition-all text-slate-300 hover:text-white">
+          PDF Preview
+        </button>
+      </div>
+
+      <a href="public/resume.pdf" target="_blank" rel="noopener noreferrer" class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 text-xs font-semibold text-slate-200 transition-all text-decoration-none" title="Open PDF in new tab">
+        <i data-lucide="external-link" class="w-3.5 h-3.5 text-cyan-400"></i>
+        <span class="hidden sm:inline">Open PDF</span>
       </a>
-      <button onclick="window.print()" class="flex items-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-xs font-bold text-white shadow-md shadow-cyan-500/20 transition-all cursor-pointer border-0">
+
+      <a href="public/resume.pdf" download="Shashank-Shukla-Resume.pdf" class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-cyan-500/15 hover:bg-cyan-500/25 border border-cyan-500/40 text-xs font-bold text-cyan-300 transition-all text-decoration-none">
+        <i data-lucide="download" class="w-4 h-4 text-cyan-400"></i>
+        <span>Download PDF</span>
+      </a>
+
+      <button onclick="window.print()" class="flex items-center gap-1.5 px-3.5 py-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-xs font-bold text-white shadow-md shadow-cyan-500/20 transition-all cursor-pointer border-0">
         <i data-lucide="printer" class="w-4 h-4"></i>
-        <span>Print (1 Page)</span>
+        <span>Print</span>
       </button>
+    </div>
+  </div>
+
+  <!-- PDF Viewer Container (Initially Hidden) -->
+  <div id="pdfViewerContainer" class="max-w-[820px] mx-auto mb-10 hidden no-print">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-3 shadow-2xl">
+      <div class="flex items-center justify-between px-2 pb-2 text-xs text-slate-400 border-b border-slate-800 mb-3">
+        <div class="flex items-center gap-2">
+          <i data-lucide="file-check" class="w-4 h-4 text-cyan-400"></i>
+          <span class="font-semibold text-slate-200">Shashank-Shukla-Resume.pdf</span>
+        </div>
+        <a href="public/resume.pdf" download="Shashank-Shukla-Resume.pdf" class="text-cyan-400 hover:underline flex items-center gap-1">
+          <i data-lucide="download" class="w-3.5 h-3.5"></i> Direct Download
+        </a>
+      </div>
+      <object data="public/resume.pdf" type="application/pdf" class="w-full h-[950px] rounded-xl border border-slate-800">
+        <div class="p-8 text-center bg-slate-950 text-slate-300 rounded-xl">
+          <p class="mb-4 text-base">Your browser cannot display embedded PDFs directly.</p>
+          <a href="public/resume.pdf" download="Shashank-Shukla-Resume.pdf" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-cyan-500 text-slate-950 font-bold">
+            <i data-lucide="download" class="w-4 h-4"></i> Download Resume PDF
+          </a>
+        </div>
+      </object>
     </div>
   </div>
 
@@ -161,7 +200,7 @@
       <div class="resume-text space-y-0.5">
         <div><strong>Languages:</strong> C++, Python, C, JavaScript</div>
         <div><strong>Web Technologies:</strong> HTML5, CSS3</div>
-        <div><strong>Tools/Platforms:</strong> Git, GitHub, VS Code, Tkinter</div>
+        <div><strong>Tools/Platforms:</strong> Git, GitHub, VS Code, Autocad</div>
         <div><strong>Core Subjects:</strong> Data Structures & Algorithms (DSA), OOP, DBMS, Operating Systems, Computer Networks</div>
         <div><strong>Soft Skills:</strong> Problem-Solving, Team Player, Leadership & Initiative, Time Management & Adaptability</div>
       </div>
@@ -176,15 +215,13 @@
         <div class="flex items-baseline justify-between text-[9.5pt]">
           <div>
             <span class="font-bold text-slate-950">Rock-Paper-Scissors Game (User vs Computer)</span>
-            <span class="text-slate-400 mx-1">|</span>
-            <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#1e3a8a]">GITHUB</a>
           </div>
           <span class="text-[9pt] font-semibold text-slate-800">Jul’ 24</span>
         </div>
         <ul class="bullet-list mt-0.5">
           <li class="bullet-item">Developed an interactive game application in Python allowing real-time gameplay between the user and computer AI.</li>
           <li class="bullet-item">Engineered randomized decision algorithms, round evaluation matrices, validation handling, and live score counters.</li>
-          <li class="bullet-item">Optimized game state management and input verification to deliver smooth CLI interaction without runtime faults.</li>
+          <li class="bullet-item">Optimized state management routines and input parsing to ensure flawless real-time interaction and zero game-loop exceptions.</li>
         </ul>
         <div class="text-[8.8pt] text-slate-800 mt-0.5 pl-3.5">
           <strong>Tech Stack:</strong> Python, Game State Logic, CLI / Control Flow
@@ -196,15 +233,13 @@
         <div class="flex items-baseline justify-between text-[9.5pt]">
           <div>
             <span class="font-bold text-slate-950">AI Assistant Siri (Desktop Voice Assistant)</span>
-            <span class="text-slate-400 mx-1">|</span>
-            <a href="https://github.com/shashankaspirant2007-lgtm" target="_blank" rel="noopener noreferrer" class="font-semibold text-[#1e3a8a]">GITHUB</a>
           </div>
           <span class="text-[9pt] font-semibold text-slate-800">Aug’ 24</span>
         </div>
         <ul class="bullet-list mt-0.5">
           <li class="bullet-item">Built an intelligent desktop voice assistant in Python utilizing speech recognition and automated query processing.</li>
           <li class="bullet-item">Implemented voice command parsing for web search automation, application triggers, and synthesized voice feedback.</li>
-          <li class="bullet-item">Architected modular command execution pipeline enabling seamless addition of new system tasks and automation routines.</li>
+          <li class="bullet-item">Designed modular command architecture for rapid integration of custom OS-level tasks and web scraping utilities.</li>
         </ul>
         <div class="text-[8.8pt] text-slate-800 mt-0.5 pl-3.5">
           <strong>Tech Stack:</strong> Python, SpeechRecognition, Pyttsx3, System / Web Automation
@@ -221,8 +256,6 @@
             <span class="font-bold text-slate-950">Cyber Security & Safe Internet Practices</span>
             <span class="text-slate-400 mx-1">|</span>
             <span class="font-semibold text-slate-800">Community Development Program</span>
-            <span class="text-slate-400 mx-1">|</span>
-            <span class="font-semibold text-slate-800">Certificate</span>
           </div>
           <span class="text-[9pt] font-semibold text-slate-800">May’ 26 – Jun’ 26</span>
         </div>
@@ -306,6 +339,27 @@
   <script>
     if (typeof lucide !== 'undefined') {
       lucide.createIcons();
+    }
+
+    function switchResumeView(mode) {
+      const sheet = document.querySelector('.resume-sheet');
+      const pdfContainer = document.getElementById('pdfViewerContainer');
+      const sheetBtn = document.getElementById('viewSheetBtn');
+      const pdfBtn = document.getElementById('viewPdfBtn');
+      
+      if (!sheet || !pdfContainer || !sheetBtn || !pdfBtn) return;
+
+      if (mode === 'pdf') {
+        sheet.classList.add('hidden');
+        pdfContainer.classList.remove('hidden');
+        pdfBtn.className = "px-3 py-1.5 rounded-md text-xs font-semibold transition-all bg-cyan-500 text-slate-950 shadow";
+        sheetBtn.className = "px-3 py-1.5 rounded-md text-xs font-semibold transition-all text-slate-300 hover:text-white";
+      } else {
+        pdfContainer.classList.add('hidden');
+        sheet.classList.remove('hidden');
+        sheetBtn.className = "px-3 py-1.5 rounded-md text-xs font-semibold transition-all bg-cyan-500 text-slate-950 shadow";
+        pdfBtn.className = "px-3 py-1.5 rounded-md text-xs font-semibold transition-all text-slate-300 hover:text-white";
+      }
     }
   </script>
 </body>

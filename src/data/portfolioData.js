@@ -100,7 +100,7 @@ export const projectsData = [
     highlights: [
       "Developed an interactive game application in Python allowing real-time gameplay between the user and computer AI.",
       "Engineered randomized decision algorithms, round evaluation matrices, validation handling, and live score counters.",
-      "Optimized game state management and input verification to deliver smooth CLI interaction without runtime faults."
+      "Optimized state management routines and input parsing to ensure flawless real-time interaction and zero game-loop exceptions."
     ],
     githubUrl: "https://github.com/shashankaspirant2007-lgtm",
     liveDemoUrl: "",
@@ -115,7 +115,7 @@ export const projectsData = [
     highlights: [
       "Built an intelligent desktop voice assistant in Python utilizing speech recognition and automated query processing.",
       "Implemented voice command parsing for web search automation, application triggers, and synthesized voice feedback.",
-      "Architected modular command execution pipeline enabling seamless addition of new system tasks and automation routines."
+      "Designed modular command architecture for rapid integration of custom OS-level tasks and web scraping utilities."
     ],
     githubUrl: "https://github.com/shashankaspirant2007-lgtm",
     liveDemoUrl: "",

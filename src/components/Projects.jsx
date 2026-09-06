@@ -104,8 +104,8 @@ export default function Projects({ onPlaceholderClick }) {
                 </div>
               </div>
 
-              {/* Footer: Tech Stack Badges & Links */}
-              <div className="pt-4 border-t border-slate-800/80 space-y-4">
+              {/* Footer: Tech Stack Badges */}
+              <div className="pt-4 border-t border-slate-800/80">
                 <div className="flex flex-wrap gap-1.5">
                   {project.technology.map((tech) => (
                     <span
@@ -116,34 +116,9 @@ export default function Projects({ onPlaceholderClick }) {
                     </span>
                   ))}
                 </div>
-
-                <div className="flex items-center gap-3">
-                  <button
-                    onClick={() => onPlaceholderClick(`GitHub Repository for ${project.title}`, project.githubUrl)}
-                    className="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white text-xs font-medium transition-colors"
-                  >
-                    <Github className="w-3.5 h-3.5 text-slate-400" />
-                    <span>GitHub Repo</span>
-                  </button>
-
-                  <button
-                    onClick={() => onPlaceholderClick(`Live Demo / Run Guide for ${project.title}`, project.liveDemoUrl || 'Run locally using Python command')}
-                    className="flex-1 flex items-center justify-center gap-2 px-3.5 py-2 rounded-xl bg-cyan-500/10 hover:bg-cyan-500/20 border border-cyan-500/30 text-cyan-300 text-xs font-medium transition-colors"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5 text-cyan-400" />
-                    <span>Live Demo / Details</span>
-                  </button>
-                </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Note on Authenticity */}
-        <div className="mt-10 p-4 rounded-xl bg-slate-900/40 border border-slate-800 text-center max-w-xl mx-auto">
-          <p className="text-xs text-slate-400">
-            <span className="text-cyan-400 font-semibold">Note:</span> GitHub repository and demo links are configured with clear placeholders ready for your custom repo links in <code className="text-slate-300 font-mono">src/data/portfolioData.js</code>.
-          </p>
         </div>
 
       </div>
