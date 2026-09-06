@@ -42,16 +42,7 @@ export default function App() {
   };
 
   const handleResumeDownload = () => {
-    setModalContent({
-      title: "Resume Download",
-      badge: "PDF Document",
-      body: "You can link your real Resume PDF by updating the `resumeUrl` field in `src/data/portfolioData.js` or placing your `resume.pdf` inside the `public/` directory.",
-      actionText: "Download Sample PDF / Placeholder",
-      action: () => {
-        showToast("Resume action triggered! (Connect your resume.pdf in portfolioData.js)");
-        setModalContent(null);
-      }
-    });
+    window.open("public/resume.pdf", "_blank");
   };
 
   const handlePlaceholderNotice = (title, url) => {
